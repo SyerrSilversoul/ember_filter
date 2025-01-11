@@ -1,8 +1,8 @@
-# Emburger filter
+# Ember filter
 
 ![Initial emburger](https://github.com/user-attachments/assets/cfa89938-1111-46af-8da5-7a8ff1d44858)
 
-Emburger filter is a Path of Exile 2 color themed highlight filter that makes Ember noises when certain items drop. It should be useful for the entire game.
+Ember filter is a Path of Exile 2 color themed highlight filter that makes Ember noises when certain items drop. It should be useful for the entire game.
 
 Features:
 - Ember themed highlights for important items
@@ -10,7 +10,7 @@ Features:
 
 ## Install
 
-Get the latest release version from: https://github.com/SyerrSilversoul/emburger_filter/releases
+Get the latest release version from: https://github.com/SyerrSilversoul/ember_filter/releases
 
 Windows: Extract the files into:
 
