@@ -1,0 +1,448 @@
+# ═══════════════════════════════════
+# Emburger filter version 1.0
+# ═══════════════════════════════════
+# Simple filter with Ember voicelines and highlights
+# it currently hides nothing and instead makes bases under level 50 less visible at area level 65 (endgame)
+#   (half-hiding low level stuff when you're in endgame maps)
+
+# ═══════════════════════════════════
+# Uniques & Rare Currency
+# ═══════════════════════════════════
+# -----------------------------------
+# Uniques
+# -----------------------------------
+Show
+Rarity Unique
+SetTextColor 255 128 0 255
+SetBorderColor 255 128 0 255
+SetBackgroundColor 53 13 13 255
+CustomAlertSound "big_nut.wav" 300
+PlayEffect Brown
+MinimapIcon 2 Brown Star
+SetFontSize 38
+
+# ═══════════════════════════════════
+# Mirrors, Divines, 6 Link
+# ═══════════════════════════════════
+Show
+Class "Currency"
+BaseType "Mirror"
+SetFontSize 45
+SetTextColor 218 143 202
+SetBorderColor 218 143 202
+SetBackgroundColor 255 255 255
+CustomAlertSound "eber_scream.wav" 300
+PlayEffect Pink
+MinimapIcon 0 Red Star
+
+Show
+Class "Currency"
+BaseType "Divine" "Perfect Jeweller's Orb"
+SetFontSize 45
+SetTextColor 153 153 255
+SetBorderColor 153 153 255 200
+SetBackgroundColor 255 255 255
+CustomAlertSound "oh_god_i_busted.wav" 300
+PlayEffect Blue
+MinimapIcon 0 Red Star
+
+# ═══════════════════════════════════
+# Dabloons (Gold)
+# ═══════════════════════════════════
+Show
+StackSize >= 500
+BaseType == "Gold"
+SetTextColor 235 200 110 255
+SetBorderColor 235 200 110 255
+PlayEffect Orange Temp
+MinimapIcon 2 Yellow Star
+
+Show
+BaseType == "Gold"
+SetTextColor 235 200 110 150
+SetBorderColor 235 200 110 150
+
+# ═══════════════════════════════════
+# Uncut Gems
+# ═══════════════════════════════════
+# -----------------------------------
+# stronger highlight for spirit gems
+# -----------------------------------
+Show
+BaseType "Uncut Spirit Gem"
+SetTextColor 0 0 0 230
+SetBorderColor 0 0 0 230
+#SetBorderColor 255 255 255 255
+SetBackgroundColor 146 195 199
+SetFontSize 36
+CustomAlertSound "ember_chyat.wav" 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+# stronger highlight for support gems in campaign
+Show
+AreaLevel < 65
+BaseType "Uncut Support Gem"
+SetTextColor 146 195 199
+SetBorderColor 255 255 255 200
+SetBackgroundColor 0 0 0 230
+SetFontSize 36
+CustomAlertSound "hallo.wav" 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+Show
+BaseType "Uncut "
+SetTextColor 146 195 199
+SetBorderColor 255 255 255 200
+SetBackgroundColor 0 0 0 230
+CustomAlertSound "hallo.wav" 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+
+# ═══════════════════════════════════
+# Cores, Relics, Jewels, Runes
+# ═══════════════════════════════════
+# -----------------------------------
+# Socketables and jewels
+# -----------------------------------
+Show 
+BaseType "Soul Core" "Timeless"
+SetTextColor 146 195 199
+SetBorderColor 146 195 199
+SetFontSize 38
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+# -----------------------------------
+# relics
+# -----------------------------------
+Show 
+Class "Relic"
+SetTextColor 146 195 199
+SetBorderColor 146 195 199
+SetFontSize 38
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+# -----------------------------------
+# jewels
+# -----------------------------------
+Show
+Class "Jewel"
+Rarity Rare
+SetTextColor 146 195 199
+SetBorderColor 146 195 199
+SetFontSize 38
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+Show
+Class "Jewel"
+Rarity Magic
+SetTextColor 146 195 199
+SetBorderColor 146 195 199
+SetFontSize 38
+PlayEffect Cyan Temp
+
+# -----------------------------------
+# runes and charms
+# -----------------------------------
+Show 
+BaseType " Rune" " Charm"
+SetTextColor 146 195 199
+PlayEffect Cyan Temp
+
+# ═══════════════════════════════════
+# Misc Important
+# ═══════════════════════════════════
+# -----------------------------------
+# Breach rings
+# -----------------------------------
+Show 
+BaseType == "Breach Ring"
+SetTextColor 204 232 246
+SetBorderColor 204 232 246
+SetBackgroundColor 72 94 169
+SetFontSize 38
+CustomAlertSound "hallo.wav" 300
+MinimapIcon 1 Cyan Diamond
+PlayEffect Cyan
+
+# -----------------------------------
+# Sekhemas trial keys
+# -----------------------------------
+Show
+BaseType "Gold Key" "Silver Key" "Bronze Key"
+SetTextColor 235 200 110 255
+SetBorderColor 235 200 110 200
+#SetBackgroundColor 53 71 130 125
+CustomAlertSound "hallo.wav" 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 35
+
+# ═══════════════════════════════════
+# Currency
+# ═══════════════════════════════════
+# -----------------------------------
+# Gemcutters, annuls, chance & high tier distillants
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Orb of Annulment" "Orb of Chance" "Distilled Isolation" "Distilled Suffering" "Greater Jeweller's Orb" 
+SetTextColor 255 255 255
+SetBorderColor 255 255 255 200
+SetBackgroundColor 113 113 189
+CustomAlertSound "eeeeeeber.wav" 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 38
+
+# -----------------------------------
+# Glassblowers, jewellers, exalts
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Exotic" "Exalted Orb" "Distilled Fear" "Distilled Despair" "Exotic Coinage"
+SetTextColor 0 0 0 255
+SetBorderColor 218 143 202 230
+SetBackgroundColor 218 143 202
+CustomAlertSound "america_nya.wav" 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 38
+
+# -----------------------------------
+# Vaal, Chaos, Regal, Artificier, Alch
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Vaal Orb" "Chaos Orb" "Regal Orb" "Artificer's Orb" "Orb of Alchemy" "Gemcutter's Prism" "Lesser Jeweller's Orb" "Glassblower's Bauble" 
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 113 113 189
+CustomAlertSound "thanks_for_dabloons.wav" 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 38
+
+Show
+Class "Currency"
+BaseType "Chance Shard" "Regal Shard"
+SetTextColor 50 50 100
+SetBorderColor 255 255 255
+SetBackgroundColor 104 138 140 230
+
+# -----------------------------------
+# Shards
+# -----------------------------------
+
+Show
+Class "Currency"
+BaseType "Shard"
+SetTextColor 150 200 250 255
+SetBorderColor 150 200 250 255
+SetBackgroundColor 20 20 0 230
+
+# -----------------------------------
+# Distilled, Catalysts, Essence
+# -----------------------------------
+
+Show
+Class "Currency"
+BaseType "Distilled" "Catalyst" "Essence of" "Omen of"
+SetTextColor 66 66 110
+SetBorderColor 66 66 110 200
+SetBackgroundColor 125 125 209 230
+CustomAlertSound "ember_chyat.wav" 300
+PlayEffect White
+MinimapIcon 1 White Circle
+
+# -----------------------------------
+# Quality increasers
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone"
+SetTextColor 50 50 100
+SetBorderColor 50 50 100 255
+SetBackgroundColor 146 195 199 255
+MinimapIcon 2 Grey Circle
+
+# -----------------------------------
+# Augs, transmutes
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Orb of Augmentation" "Orb of Transmutation" 
+SetTextColor 100 165 230 255
+SetBorderColor 150 200 250 150
+#172 130 188 200
+MinimapIcon 2 Grey Circle
+
+# -----------------------------------
+# Splinters
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact"
+SetTextColor 255 255 255
+SetBorderColor 255 255 255 200
+SetBackgroundColor 66 101 162
+MinimapIcon 2 Grey Circle
+
+# -----------------------------------
+# Wisdom Scrolls
+# -----------------------------------
+Show
+Class "Currency"
+BaseType "Wisdom"
+SetTextColor 164 220 224 200
+SetBorderColor 164 220 224 80
+SetBackgroundColor 20 20 0 230
+
+# -----------------------------------
+# Misc Currency
+# -----------------------------------
+Show
+Class "Currency"
+SetTextColor 249 248 152
+SetBorderColor 249 248 152
+SetBackgroundColor 0 0 0
+CustomAlertSound "hallo.wav" 300
+PlayEffect Pink
+MinimapIcon 1 White Circle
+
+# -----------------------------------
+# Pinnacle keys
+# -----------------------------------
+Show
+Class "Pinnacle Keys"
+SetTextColor 235 200 110 255
+SetBorderColor 235 200 110 255
+#SetBackgroundColor 53 71 130 125
+CustomAlertSound "thanks_for_dabloons.wav" 300
+PlayEffect White
+MinimapIcon 1 Yellow Square
+SetFontSize 40
+
+# -----------------------------------
+# Fragments
+# -----------------------------------
+Show
+BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+SetTextColor 218 143 202
+SetBorderColor 218 143 202
+SetBackgroundColor 0 0 0
+CustomAlertSound "hallo.wav" 300
+PlayEffect White
+MinimapIcon 1 White Square
+SetFontSize 35
+
+# -----------------------------------
+# Waystones
+# -----------------------------------
+Show
+BaseType "Waystone"
+Rarity <= Rare
+SetTextColor 255 255 255
+SetBorderColor 255 255 255 200
+CustomAlertSound "hallo.wav" 300
+PlayEffect White
+MinimapIcon 1 White Square
+SetFontSize 35
+
+# ═══════════════════════════════════
+# Gear
+# ═══════════════════════════════════
+
+# -----------------------------------
+# Rings, amulets, belts
+# -----------------------------------
+Show
+Class "Rings" "Amulets" "Belts"
+Rarity Rare
+SetFontSize 35
+SetTextColor 249 248 152
+SetBorderColor 249 248 152 200
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+Show
+Rarity Normal
+Class "Rings" "Amulets" "Belts"
+SetFontSize 35
+
+Show
+Class "Rings" "Amulets" "Belts"
+Rarity Magic
+SetFontSize 35
+
+# -----------------------------------
+# Sockets, Quality
+# 20 qual (prio over sockets)
+# -----------------------------------
+Show
+Quality = 20
+SetBorderColor 50 241 255
+SetBackgroundColor 27 37 56
+CustomAlertSound "hallo.wav" 300
+PlayEffect Blue
+MinimapIcon 1 Blue Square
+SetFontSize 37
+
+Show
+Sockets "S" "SS" "SSS"
+Rarity Normal
+SetBorderColor 255 255 255 200
+SetFontSize 37
+
+Show
+Sockets "S" "SS" "SSS"
+Rarity Magic
+#SetTextColor 72 94 169
+SetTextColor 99 132 243
+SetBorderColor 255 255 255 200
+SetFontSize 37
+
+Show
+Sockets "S" "SS" "SSS"
+Rarity Rare
+SetTextColor 249 248 152
+SetBorderColor 255 255 255 200
+SetFontSize 37
+
+Show
+Quality > 0
+SetBorderColor 50 150 255
+SetFontSize 37
+
+# -----------------------------------
+# Generic Magic & Rare
+# -----------------------------------
+Show
+Rarity Rare
+SetTextColor 249 248 152
+
+Show
+Rarity Magic
+SetTextColor 99 132 243
+
+# ═════════════════════════════════════════════
+# Hide / Alter stuff
+# ═════════════════════════════════════════════
+# -----------------------------------
+### Reduce background opacity on lower level bases at endgame
+# -----------------------------------
+Show
+Rarity <= Magic
+Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre"
+AreaLevel >= 65
+DropLevel <= 50
+SetBackgroundColor 0 0 0 125
+
+Show
+BaseType == "Expert Laced Boots"
+
