@@ -10,6 +10,8 @@ Features:
 
 ## Install
 
+Get the latest release version from: https://github.com/SyerrSilversoul/emburger_filter/releases
+
 Windows: Extract the files into:
 
 `Documents\My Games\Path of Exile 2`
