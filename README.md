@@ -26,5 +26,6 @@ Linux: place files in wineprefix of steamlibrary containing Path Of Exile 2 loca
 
 ## Credits/Thanks
 - Core filter inspired from [NeverSink](https://github.com/NeverSinkDev/NeverSink-PoE2litefilter)
+- Reference filter is the Starknight's [Awawa](https://github.com/3r1/awawa) filter, so check it out too!
 - Voice clips from [Ember Amane](https://www.youtube.com/@EmberAmane)
 - Made in compliance with Phase Connect's [fan works guidelines](https://phase-connect.com/fan-work-guidelines/)
