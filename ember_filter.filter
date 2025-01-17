@@ -1,5 +1,5 @@
 # ═══════════════════════════════════
-# Ember filter version 1.0
+# Ember filter
 # ═══════════════════════════════════
 # Simple filter with Ember voicelines and highlights
 # it currently hides nothing and instead makes bases under level 50 less visible at area level 65 (endgame)
