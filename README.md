@@ -1,6 +1,6 @@
 # Ember filter
 
-![Initial emburger](https://github.com/user-attachments/assets/cfa89938-1111-46af-8da5-7a8ff1d44858)
+![Ember Filter](https://github.com/user-attachments/assets/8778e5b2-2f4f-46b2-9f81-247894e61b99)
 
 Ember filter is a Path of Exile 2 color themed highlight filter that makes Ember noises when certain items drop. It should be useful for the entire game.
 
@@ -29,3 +29,4 @@ Linux: place files in wineprefix of steamlibrary containing Path Of Exile 2 loca
 - Reference filter is the Starknight's [Awawa](https://github.com/3r1/awawa) filter, so check it out too!
 - Voice clips from [Ember Amane](https://www.youtube.com/@EmberAmane)
 - Made in compliance with Phase Connect's [fan works guidelines](https://phase-connect.com/fan-work-guidelines/)
+
